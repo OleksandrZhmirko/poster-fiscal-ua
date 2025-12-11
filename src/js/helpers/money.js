@@ -1,0 +1,22 @@
+export const roundWithPrecision = (number, precision = 2) => {
+  const NUMBER_OF_DECIMALS = 10;
+  const FRAC_DIGITS = 3;
+  const pow = NUMBER_OF_DECIMALS ** precision;
+  const fixed = Number((number * pow).toFixed(FRAC_DIGITS));
+
+  return Math.round(fixed) / pow;
+};
+
+export const decimalRounding = (number) => {
+  const NUMBER_OF_DECIMALS = 10;
+  const rounded = Math.round(number * NUMBER_OF_DECIMALS) / NUMBER_OF_DECIMALS;
+
+  return rounded;
+};
+
+export const cashSumDecimalRounding = (number) => {
+  const MINIMAL_CASH_SUM = 0.1;
+  return Math.max(decimalRounding(number), MINIMAL_CASH_SUM);
+};
+
+export const convertSumToKopecks = sum => roundWithPrecision(sum * 100, 0);

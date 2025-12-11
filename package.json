@@ -1,0 +1,54 @@
+{
+  "name": "poster-pos-platform-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite build --watch & vite --host",
+    "build": "vite build",
+    "deploy": "node upload.mjs",
+    "lint": "eslint ./src --ext .js,.jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joinposter/Poster-POS-Platform-Boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joinposter/Poster-POS-Platform-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/joinposter/Poster-POS-Platform-Boilerplate#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.7.0",
+    "sass": "^1.75.0",
+    "stream-browserify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@vitejs/plugin-react": "^4.2.1",
+    "babel-eslint": "^10.0.1",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "md5": "^2.2.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "request": "^2.88.0",
+    "shelljs": "^0.8.5",
+    "typescript": "^5.9.3",
+    "vite": "^5.2.9",
+    "vite-plugin-css-injected-by-js": "^3.5.0",
+    "vite-plugin-mkcert": "^1.17.5"
+  }
+}
